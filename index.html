@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Getting Started with Java</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Elements of a Java Application">Elements of a Java Application</a></li>
+        <li>
+        <a class="nav-link" href="#Compiling and Executing Java Code">Compiling and Executing Java Code</a></li>
+              <li>
+        <a class="nav-link" href="#Creating a First Java Class">Creating a First Java Class</a></li>
+              <li>
+        <a class="nav-link" href="#Preparing the Compilation of your First Class">Preparing the Compilation of your First Class</a></li>
+              <li>
+        <a class="nav-link" href="#Setting up a Java Development">Setting up a Java Development</a></li>
+              <li>
+    <section class="main-section" id="Elements of a Java Application">
+      <h1>Elements of a Java Application</h1>       <a class="nav-link" href="#Compiling your First Class">Compiling your First Class</a></li>
+              <li>
+        <a class="nav-link" href="#Adding Code to Your Class to Run It">Adding Code to Your Class to Run It</a></li>
+              <li>
+        <a class="nav-link" href="#Running the Hello World Program as a Single File Application">Running the Hello World Program as a Single File Application</a></li>
+              <li>
+        <a class="nav-link" href="#Common Problems and Their Solutions">Common Problems and Their Solutions</a></li>
+              <li>
+        <a class="nav-link" href="#Going Further">Going Further</a></li>
+        
+  </ul>
+  </nav>
+   <main id="main-doc">
+     <article>
+        <p>
+          I understand that you are eager to type some code in your editor and run it to see your first Java application in action! Do not worry, your expectation will be fulfilled by the end of this tutorial. But before we move on, I would like to do through several elements that you need to know to fully understand what you are doing.</p>
+          <p>
+            Even if you are familiar with some other programming language, know about compilation, know what an executable file is you may be interested in the following because Java works in a way that differs from C or C++.</p></article>
+            
+    <main id="main-doc">
+    <section class="main-section" id="Compiling_and_Executing_Java_Code">
+      <header>Compiling and Executing Java Code</header>
+      <article>
+        <p> There are several steps that you need to follow to create a Java application. This tutorial shows you how to create a very simple Java application. If you need to create an enterprise application, the creation process is more complex but at its core you will find these simple steps.</p>   
+        <p>The first of these steps is to write some Java code in a text editor.</p>  
+          <p>Then this code has to be transformed to another format, which can be executed by your computer. This transformation is conducted by a special piece of software called a <em>compiler</em>. Some languages do not have a compiler; Java does. Every compiler is specific to a language.</p> 
+            <p>The file produced by a compiler is often called a binary file or an executable file. Whereas you can read a source code and understand it, binary or executable files are not meant to be read by a human person. Only your computer can make sense of it.</p> 
+              <p>This code contains special binary codes called byte code. This is a technical term that you may come across. The precise description of what is this byte code is beyond the scope of this tutorial.</p> 
+                <p>Compiling some code may fail; your code has to be correct for the compiler to produce an executable version of it. Do not worry, this page gives you the code you are going to compile. All you need to do is copy it and paste it in your text editor.</p> 
+              <p>Once the compiler produced the binary file that you need, you can execute this binary file, that will your program.</p>
+              <p>
+                <blockquote>
+                  These two steps: compilation and execution require two specific pieces of software that are part of the Java Development Kit, also known as the JDK. You will see how to download the JDK for free and how to install it later in this tutorial.
+                  </blockquote>
+                  </p>
+                  <p>
+                    Note that starting with Java SE 11 you can also merge these two steps into one, by executing a <code>.java</code> file directly. You can use these feature only if you are executing a program that is written in a single file. This way of executing your java application does not work if your java code spans more than one file.
+                    </p>
+
+                    <main id="main-doc">
+    <section class="main-section" id="Creating_a_First_Java_Class">
+      <header>Creating a First Java Class</header>
+      <article>
+        <p>
+          The first step you need to know is that the Java code you are writing is saved in plain text files. In this tutorial, your application will be written in a single text file. Larger applications may require thousands of such files.</p>
+          <p>Java is an object-oriented language. If this technical term does not mean anything to you, do not worry, all you need to remember at this point is that all the code you write must be held in a Java class.</p>
+          <p>A Java class is created by a special declaration in a text file. Just copy the following code and paste it in your text editor. Congratulation! You have created your first Java class!</p>
+<div class="code-toolbar">
+ <pre class="language-java line-numbers" tabindex="0" style="position: relative;">
+<span class="token keyword">public</span>
+<span class="token keyword">class</span>
+<span class="token class-name">MyFirstClass</span>
+<span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-row">
+<p>The name of this Java class is <code>MyFirstClass</code>. You need to save this text in a file named <code>MyFirstClass.java</code>. A Java class must be saved in a file that has the same name as your class with the extension<code> .java</code>. This is mandatory and is in fact very convenient because you do not need to open a file to know what class is written in it.</p>
+<p>You can give this class any name as long as it does not start with a number. There is a convention though: the name of a Java class starts with a capital letter. This is not mandatory but all Java developers follow this convention. When you become a seasoned Java developer, seeing a class that does not follow this convention will look weird to you.</p>
+<p>
+  If you are following this example to the letter, you should save the<code> MyFirstClass</code> class in a text file called <code>MyFirstClass.java</code>.
+  </p>
+  <p>
+    Just a word of warning: you should be using a plain text editor to create and save this file. Using a word processor will not work.</p>
+  <div class="toolbar">
+      <div class="toolbar-item">
+        <button class="copy-to-clipboard-button" type="button" data-copy-state="copy"> 
+          <span>Copy</span>
+          </button>
+          </div>
+          </div>
+            </div>
+            <p>
+              "The name of this Java class is" <code>MyFirstClass</code>. "You need to save this text in a file named"<code> MyFirstClass.java.</code> "A Java class must be saved in a file that has the same name as your class with the extension"<code> .java. ,/code>"This is mandatory and is in fact very convenient because you do not need to open a file to know what class is written in it."</p>
+              <p>
+                You can give this class any name as long as it does not start with a number. There is a convention though: the name of a Java class starts with a capital letter. This is not mandatory but all Java developers follow this convention. When you become a seasoned Java developer, seeing a class that does not follow this convention will look weird to you.
+                </p>
+                <p>
+                  "If you are following this example to the letter, you should save the" <code>MyFirstClass</code> class in a text file called <code>MyFirstClass.java.</code>
+                  </p>
+<p>
+  Just a word of warning: you should be using a plain text editor to create and save this file. Using a word processor will not work.
+  </p>
+  <p>
+    <a id="first-compilation">&nbsp;</a>
+    </p>
+      <main id="main-doc">
+    <section class="main-section" id="preparing_the_compilation_of_your_first_class"><header>Preparing the Compiliation of Your First Class</header>
+    
+    <p> == $0
+      "Compiling is the second step you need to follow after the creation of your first class. It consists of transforming the Java code you wrote in your"<code> MyFirstClass.java</code> file into another format that can be executed. The result of this transformation will be stored in another file created by the compiler. The name of this file will be<code> MyFirstClass.class</code>"."
+      </p>
+      <p>
+        So far the only tool you have been using is a plain text editor. Compiling this class requires a compiler; something you may not have on your computer. Fortunately, you can download this compiler and use it for free. Let me guide you through this process.</p>
+        <p>
+          As of now, downloading "Java" means downloading the Java Development Kit, also known as the JDK. The JDK contains many tools and among them are the ones you will be using to compile and run a Java application. It is officially distributed by the OpenJDK project and by Oracle.</p>
+          <p>
+            You may have heard about some other elements, also called "Java".
+            </p>
+            <p>
+              The JRE stands for Java Runtime Environment. It is a subset of the JDK that is not distributed by the OpenJDK or Oracle anymore. It only contained the tools needed to run a Java application. You cannot compile your code with the tools provided in the JRE.
+              </p>
+              <p>
+                You may also have heard about J2EE, Java EE or Jakarta EE. All these acronyms refer to the Java Enterprise Edition. It is a set of tools and libraries to create enterprise-class applications. Java EE is different from the JDK and is outside the scope of this tutorial. You do not need Java EE to compile and run the simple application we are creating in this tutorial.
+                </p>
+                <p><a id="setting-up-jdk">&nbsp;</a></p>  <main id="main-doc">
+    <section class="main-section" id="setting_up_a_java_development_kit">
+      <header>Setting up a Java Development Kit</header>
+  <p> ==$0
+    "You can download the JDK from different places. There is a one-stop page that always refers to the latest version of the JDK:"<a href="https://jdk.java.net/">https://jdk.java.net/</a>". Selecting the latest"Ready for use" JDK version takes you to a page where you can download the version of the JDK you need."</p>
+    <p>From this page you can download four versions:</p>
+    <ul>
+      <li>
+        ::marker
+        "Linux/AArch64"
+        </li>
+        <li>
+          ::marker
+          "Linux/x64"
+          </li>
+          <li>
+            ::marker
+            "macOS/x64"
+            </li>
+            <li>
+              ::marker
+              "Windows/x64"
+              </li>
+              <li>
+                ::marker
+                "Windows/x64"
+                </li>
+                </ul>
+<p>
+  This page provides production-ready open-source builds of the Java Development Kit, an implementation of the Java SE Platform under the GNU General Public License, version 2, with the Classpath Exception. </p>
+  
+    
+      <main id="main-doc">
+    <section class="main-section" id="setting_up_a_jdk_for_windows_x64">
+     
+ <header>Setting up a JDK for Windows/x64</header>
+        
+    <p> == $0
+      "Let us download the Windows version. What you get is a ZIP file of about 200MB that you can open with any ZIP utility software. This ZIP file contains the JDK. You can unzip the content of this file anywhere on your computer."</p>
+      <p>
+        "Once this is done you need to create an environment variable called"<code> JAVA_HOME</code> "that points to the directory where you unzipped the JDK. First you need to open a DOS prompt. If you unzipped a JDK 19 ZIP file in the"<code> D:\jdk\ </code>"directory then the command you need to type in this DOS prompt is the following:"</p>
+<div class="code-toolbar">
+  <pre class="language-shell line-numbers" tabindex="0" style="position: relative;">
+    <code class="language-shell">
+      <span class="token operator">></span>
+        <span class="token builtin class-name">set</span>
+        <span class="token assign-left variable">JAVA_HOME</span>
+          <span class="token operator">=</span>"D:"
+            <span class="token punctuation">\</span>
+              <span class="token punctuation">\</span>"jdk-19"
+  <span aria-hidden="true" class="line-numbers-rows">
+    <span> == $0
+      ::before
+      </span>
+      </span>
+      </code>
+      <div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
+      </pre>
+      <div class="toolbar">
+        <div class="toolbar-item">
+          <button class="copy-to-clipboard-button" type="button" data-copy-state="copy">
+            <span>Copy</span>
+            </button>
+            </div>
+            </div>
+            </div>
+<p>
+  "Please note that in this example and all the others the leading"<code>></code>"is there to show you that you need to type this command or paste it in a prompt. You should not type this character or paste it as it is not part of the" <code>set</code>"command."</p>
+  <p>"You can check that the"<code> JAVA_HOME </code>"variable has been properly set by typing the following code:"</p>
+  <div class="code-toolbar">
+    <pre class="language-shell line numbers" tabindex="0" style="position: relative;">
+      <code class="language-shell"> == $0
+        <span class="token operator">></span>
+        <span class="token builtin class-name">echo</span>
+        "%JAVA_HOME%"
+  
+
+                 
